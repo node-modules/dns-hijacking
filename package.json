@@ -1,0 +1,41 @@
+{
+  "name": "dns-hijacking",
+  "version": "1.0.0",
+  "description": "Node.js DNS hijacking tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && mocha -t 15000 -r intelli-espower-loader test/*.test.js",
+    "test-cov": "istanbul cover _mocha -- -t 15000 -r intelli-espower-loader test/*.test.js",
+    "lint": "eslint test *.js",
+    "ci": "npm run lint && npm run test-cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-modules/dns-hijacking.git"
+  },
+  "keywords": [
+    "dns",
+    "hijacking",
+    "node"
+  ],
+  "author": "ngot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/node-modules/dns-hijacking/issues"
+  },
+  "homepage": "https://github.com/node-modules/dns-hijacking#readme",
+  "devDependencies": {
+    "eslint": "3",
+    "eslint-config-egg": "3",
+    "intelli-espower-loader": "^1.0.1",
+    "istanbul": "*",
+    "mocha": "*",
+    "power-assert": "^1.4.1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
